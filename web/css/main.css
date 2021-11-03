@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url('../images/bg.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    padding-bottom: 5rem;
+    width: 700px;
+    border-radius: 10px;
+    margin: 2.5rem auto;
+    padding-top: 1.25rem;
+    background-color: white;
+}
+.menu{
+    margin: 0 auto ;
+    width: 663px;
+    height: 51px;
+    background-image: url('../images/menu_bg.gif');
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    line-height: 51px;
+}
+.menu ul li{
+    margin-left: 3.25rem;
+}
+.menu ul li a{
+    font-weight: bold;
+    color: #5B5146;
+}
+h3{
+    margin-top: 5rem;
+    margin-left: 2rem;
+    
+    color: darkblue;
+}
+h3 span{
+    color: #35596B;
+}
+form{
+    padding-left: 2rem;
+    color: #35596B;
+    margin-top: 3rem;
+}
+.text{
+    width: 180px;
+    margin: 0.25rem;
+    background-color: #FAFFBD;
+}
+.sign-in{
+    margin-left: 5.75rem;
+    padding: 2px;
+    font-weight: bold;
+}
+.register{
+    border: none;
+    background-color: transparent;
+}
+
+
+.no-question{
+    width: 70px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.start{
+    text-align: center;
+    margin: 0 auto;
+}
+.start input{
+    padding: 2px;
+    font-size: 17px;
+}
+
+
+
+/* makeQuiz */
+.question{
+    margin-top: 1.5rem;
+}
+.text-area{
+    margin-left: 2rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+}
+.answer{
+    margin-left: 2rem;
+}
+.option{
+    margin-left: 0.25rem;
+}
+.save-question{
+    margin-left: 7rem;
+}
+.save-question input{
+    padding: 2px;
+    font-size: 17px;
+}
+
+/* manage quiz */
+table{
+    margin-top: 3rem;
+    width: 700px;
+    padding-left: 2rem;
+    text-align: left;
+}
+table th{
+    color: blue;
+}
+table td{
+    padding: 0.25rem;
+}
+
+/*take quiz*/
+.time{
+    text-align: center;
+}
+.time span{
+    color: red;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://localhost:8080/OnlineQuiz/manageQuiz -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Manage Quiz Page</title>
+        <link rel="stylesheet" href="../css/main.css">
+
+    </head>
+    <body>
+        <div class="container">
+            
+
+
+
+<div class="menu">
+    <ul>
+        <li><a href="http://localhost:8080/OnlineQuiz/home">Home</a></li>
+        <li><a href="http://localhost:8080/OnlineQuiz/takeQuiz">Take Quiz</a></li>
+        <li><a href="http://localhost:8080/OnlineQuiz/makeQuiz">Make Quiz</a></li>
+        <li><a href="http://localhost:8080/OnlineQuiz/manageQuiz">Manage Quiz</a></li>
+        <li><a href="http://localhost:8080/OnlineQuiz/logout">Log out</a></li>
+    </ul>
+</div>
+
+            <div class="main">
+                <h3>Number of questions: 1</h3>
+                <table>
+                    <tbody><tr>
+                        <th>Quiz Id</th>
+                        <th>Quiz Name</th>
+                        <th>Creator</th>
+                        <th>DateCreated</th>
+                        <th>View</th>
+                        <th>Delete</th>
+                    </tr>
+                    
+                        <tr>
+                            <td>demo123</td>
+                            <td>demo123</td>
+                            <td>teacher1</td>
+                            <td>2021-Oct-15</td>
+                            <td><a onclick="submitForm(&#39;demo123&#39;, &#39;view-quiz&#39;)"><button>View</button></a></td>
+                            <td><a onclick="if (confirm(&#39;Are you sure you want to delete this quiz?&#39;))
+                                        submitForm(&#39;demo123&#39;, &#39;delete-quiz&#39;)"><button>Delete</button></a></td>
+                        </tr>
+                    
+                </tbody></table>
+                <form id="frm" method="POST">
+                    <input type="hidden" id="text" name="quizId">
+                </form>
+            </div>
+
+        </div>
+        <script>
+            function submitForm(quizId, action) {
+                var form = document.getElementById('frm');
+                var text = document.getElementById('text');
+                form.action = action;
+                text.value = quizId;
+                form.submit();
+            }
+
+        </script>
+    
+
+</body></html>
